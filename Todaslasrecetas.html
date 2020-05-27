@@ -1,0 +1,39 @@
+<html>
+<head><title>Menú</title></head>
+<form>
+    <body background="aestheticmarron4.jpg">
+    <select name="links" onchange="top.location.href=this.form.links.options[this.form.links.selectedIndex].value">
+       <option selected="selected">
+           Todas las recetas de repostería
+       </option>
+       <option value="AMERICANCOOKIES.html">
+       American cookies
+       </option>
+       <option value="TARTACHOCOLATE.html">
+           Tarta de chocolate
+       </option>
+       <option value="BIZCOCHOALMENDRA.html">
+          Bizcocho de almendra
+       </option>
+        </option>
+       <option value="BIZCOCHOYOGUR.html">
+       Bizcocho de yogur
+       </option>
+         <option value="BIZCOCHOAMARMOLADO.html">
+       Bizcocho amarmolado
+       </option>
+       <option value="CREPESDULCES.html">
+       Crêpes dulces
+       </option>
+   </select>
+<script>
+function hora() {
+ var DateString=(new Date()).toString();
+ self.status=DateString.substring(0,3+DateString.lastIndexOf(':'))+
+ "Cualquier mensaje";
+ setTimeout("hora()",200);}
+hora()
+</script>
+
+</form>
+</html>
